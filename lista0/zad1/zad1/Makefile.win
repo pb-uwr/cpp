@@ -1,0 +1,5 @@
+wynik.exe: zadanie.obj
+	link /DEBUG /OUT:wynik.exe zadanie.obj
+	
+zadanie.obj: zadanie.cpp
+	cl /std:c++17 /EHsc /c /Zi /W4 /WX /Fo:zadanie.obj zadanie.cpp
